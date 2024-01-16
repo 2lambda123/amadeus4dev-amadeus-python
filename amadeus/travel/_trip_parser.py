@@ -26,6 +26,6 @@ class TripParser(Decorator, object):
             amadeus.travel.trip_parser.post(amadeus.travel.from_base64(base64))
 
         :rtype: amadeus.Response
-        :raises amadeus.ResponseError: if the request could not be completed
+        :raises amadeus.ResponseError: If the request could not be completed.
         '''
         return self.client.post('/v3/travel/trip-parser', body)
