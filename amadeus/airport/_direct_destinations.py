@@ -11,8 +11,11 @@ class DirectDestinations(Decorator, object):
             amadeus.airport.direct_destinations.get(
                             departureAirportCode='BLR')
 
-        :param departureAirportCode: the departure Airport code following
-            IATA standard. ``"BLR"``, for example for Bengaluru
+        :param departureAirportCode: the IATA code of the departure airport, e.g. "BLR" for Bengaluru
+        :type departureAirportCode: str
+        :return: The response containing airport direct routes
+        :rtype: amadeus.Response
+        :raises amadeus.ResponseError: If the request could not be completed
 
         :rtype: amadeus.Response
         :raises amadeus.ResponseError: if the request could not be completed
