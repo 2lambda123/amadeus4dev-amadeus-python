@@ -14,6 +14,6 @@ class Destinations(Decorator, object):
             Example: ``"BA"``
 
         :rtype: amadeus.Response
-        :raises amadeus.ResponseError: if the request could not be completed
+        :raises amadeus.ResponseError: If the request could not be completed.
         '''
         return self.client.get('/v1/airline/destinations', **params)
