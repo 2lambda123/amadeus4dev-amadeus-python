@@ -1,4 +1,5 @@
 from amadeus.client.decorator import Decorator
+import amadeus
 
 
 class TripParser(Decorator, object):
